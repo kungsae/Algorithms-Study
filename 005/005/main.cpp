@@ -1,34 +1,41 @@
 #include<iostream>
 using namespace std;
 
-//int a = 0;
-//void func(int n)
-//{
-//	if (n > a)
-//	{
-//		a = n;
-//	}
-//	else
-//	{
-//
-//	}
-//
-//}
-//int main()
-//{
-//	int asd[5] = {0, };
-//	for (int i = 0; i < 5; i++)
-//	{
-//		cin >> asd[i];
-//		
-//	}
-//	for (int i = 0; i < 5; i++)
-//	{
-//		func(asd[i]);
-//	}
-//	cout << a;
-//	return(0);
-//}
+int a = 0;
+int c = 0;
+void func(int n[])
+{
+	if (n[c] > a&& c < 5)
+	{
+		a = n[c];
+		c++;
+		func(n);
+	}
+	else if(c < 5)
+	{
+		c++;
+		func(n);
+	}
+	else
+	{
+
+	}
+
+}
+int main()
+{
+//	cout << "입력 받을 숫자의 개수 : ";
+//	cin >> b;
+	int asd[5] = { 0, };
+	for (int i = 0; i < 5; i++)
+	{
+		cin >> asd[i];
+		
+	}
+		func(asd);
+	cout << a;
+	return(0);
+}
 
 //int temp = 0;
 //int A = 0;
