@@ -41,7 +41,7 @@ using namespace std;
 
 //int func(int n)
 //{
-//	if (n == .0)
+//	if (n == 0)
 //	{
 //		return 0;
 //	}	
@@ -61,14 +61,14 @@ using namespace std;
 
 
 
-int main()
-{
-	int n = 0, temp = 1;
-	cin >> n;
-	for (int i = 0; i < n; i++)
-	{
-		temp = temp * (i + 1);
-	}
-	cout << temp;
-	return(0);
-}
+//int main()
+//{
+//	int n = 0, temp = 1;
+//	cin >> n;
+//	for (int i = 0; i < n; i++)
+//	{
+//		temp = temp * (i + 1);
+//	}
+//	cout << temp;
+//	return(0);
+//}

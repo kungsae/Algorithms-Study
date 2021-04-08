@@ -1,17 +1,18 @@
 #include<iostream>
 using namespace std;
-
+//
 //int a = 0;
+//int b = 0;
 //int c = 0;
 //void func(int n[])
 //{
-//	if (n[c] > a&& c < 5)
+//	if (n[c] > a&& c < b)
 //	{
 //		a = n[c];
 //		c++;
 //		func(n);
 //	}
-//	else if(c < 5)
+//	else if(c <b)
 //	{
 //		c++;
 //		func(n);
@@ -24,10 +25,10 @@ using namespace std;
 //}
 //int main()
 //{
-////	cout << "입력 받을 숫자의 개수 : ";
-////	cin >> b;
-//	int asd[5] = { 0, };
-//	for (int i = 0; i < 5; i++)
+//	cout << "입력 받을 숫자의 개수 : ";
+//	cin >> b;
+//	int asd[100] = { 0, };
+//	for (int i = 0; i < b; i++)
 //	{
 //		cin >> asd[i];
 //		
@@ -37,7 +38,7 @@ using namespace std;
 //	return(0);
 //}
 
-//int temp = 0;
+
 //int A = 0;
 //int c = 0;
 //void func(int n)
@@ -46,11 +47,8 @@ using namespace std;
 //	if (n >= 1)
 //	{
 //		A = n/10;
-//		//cout << A % 10 << endl;
-//		temp = A - A % 10;
+//		int temp = A - A % 10;
 //		c += A % 10;
-//		
-//		//cout << temp<<endl;
 //		func(temp);
 //	}
 //	else
@@ -64,31 +62,31 @@ using namespace std;
 //	int b;
 //	cin >> b;
 //	func(b);
-//	//cout << temp;
 //	return(0);
 //}
 
-int a = 1;
-void func(int n)
-{
-	cout <<n<<" x "<<a<<" = "<< n * a<<endl;
-	if (a >= 9)
-	{
-		a = 1;;
-	}
-	else
-	{
-		a++;
-		func(n);
-	}
-}
-int main()
-{
-	int b;
-	cin >> b;
-
-	func(b);
-
-	return(0);
-}
+//
+//int a = 1;
+//void func(int n)
+//{
+//	cout <<n<<" x "<<a<<" = "<< n * a<<endl;
+//	if (a >= 9)
+//	{
+//		a = 1;;
+//	}
+//	else
+//	{
+//		a++;
+//		func(n);
+//	}
+//}
+//int main()
+//{
+//	int b;
+//	cin >> b;
+//
+//	func(b);
+//
+//	return(0);
+//}
 
