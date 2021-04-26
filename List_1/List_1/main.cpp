@@ -21,7 +21,36 @@ void Delete(node* ptr);
 int main()
 {
 	int menu = 0;
+
 	Init();
+
+	while (1)
+	{
+		cout << "1. 입력 2. 출력 3 . 삽입 4. 삭제 5. 종료" << endl;
+		cout << " Input menu : ";
+		cin >> menu;
+
+		switch (menu)
+		{
+		case 1:
+			Insert(tail);
+			break;
+		case 2:
+			PrintList(head);
+			break;
+		case 3:
+			InsertData(head);
+			break;
+		case 4:
+			Delete(head);
+			break;
+		case 5:
+			break;
+		default:
+			cout << "select menu error" << endl;
+		}
+		if (menu == 5) 	break;
+	}
 	return(0);
 }
 
