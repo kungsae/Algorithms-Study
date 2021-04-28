@@ -1,5 +1,5 @@
 //1번문제
-
+//
 //#include<iostream>
 //
 //using namespace std;
@@ -80,77 +80,33 @@
 //	ps->topIndex--;
 //	return(ps->stackArr[ps->topIndex]);
 //}
-
+// 
+//20316정의재
 #include<iostream>
-
+#include<stack>
+#include<string>
 using namespace std;
-
-#define SIZE 10
-
-typedef struct
-{
-	int stackArr[SIZE];
-	int topIndex;
-	int name;
-
-}stack;
-
-typedef stack* pstack;
-
-void init(pstack ps, int c);
-void push(pstack ps, int ch);
-int pop(pstack ps);
 
 int main()
 {
-	//cout << "A";
-	stack s1;
-	int input;
-	int a;
-	int arr[100];
-	init(&s1, 0);
+	stack<char> s1;
+	string input;
+	cin >> input;
+	for (int i = 0; i < input.length(); i++)
+	{
+		s1.push(input[i]);
+	}
 
-		cin >> input;
-		while (input / a <1 )
-		{
 
-		}
-		push(&s1, arr[0]);
-
-	cout << endl;
+	for (int i = 0; i < input.length(); i++)
+	{
+		cout << s1.top();
+		s1.pop();
+	}
+	
+	//s1.push
 	return(0);
 }
-
-void init(pstack ps, int n)
-{
-	ps->topIndex = 0;
-	ps->name = n;
-	cout << ps->name << endl;
-}
-void push(pstack ps, int num)
-{
-	if (ps->topIndex == SIZE)
-	{
-		cout << "스택이 최대상태" << endl;
-		return;
-	}
-
-	ps->stackArr[ps->topIndex] = num;
-	ps->topIndex++;
-}
-int pop(pstack ps)
-{
-	if (ps->topIndex == 0)
-	{
-		cout << "topIndex의 값이 없음";
-		return(0);
-	}
-	ps->topIndex--;
-	return(ps->stackArr[ps->topIndex]);
-}
-
-
-
 
 
 //3번문제

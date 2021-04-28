@@ -1,2 +1,4 @@
 ﻿  main.cpp
+F:\Algorism\Algorithm\Stack1\Stack1\main.cpp(94,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+F:\Algorism\Algorithm\Stack1\Stack1\main.cpp(100,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Stack1.vcxproj -> F:\Algorism\Algorithm\Stack1\Debug\Stack1.exe
